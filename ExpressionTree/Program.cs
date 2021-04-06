@@ -48,8 +48,8 @@ namespace HexConvertation
                   Expression.Block(
                         Expression.IfThen(
                             Expression.Not(
-                                // i <= n
-                                Expression.LessThanOrEqual(i, mas
+                                // i <= maxLenght
+                                Expression.LessThanOrEqual(i, maxLenght)
             var decimal1 = Expression.IfThenElse(Expression.LessThan(hex1Length, i), 0, Expression.Call(map, methodIndexOf, hex1Array));
             var decimal2 = Expression.IfThenElse(Expression.LessThan(hex1Length, i), 0, Expression.Call(map, methodIndexOf, hex2Array));
             var sumPosition = Expression.MultiplyAssign(decimal1, decimal2, wholePart))
